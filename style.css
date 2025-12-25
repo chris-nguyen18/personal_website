@@ -488,3 +488,44 @@ body {
         padding: 2rem;
     }
 }
+
+/* Box around Biography section */
+.section-box {
+    background-color: #ffffff;      /* white background */
+    padding: 40px 30px;            /* spacing inside */
+    border-radius: 15px;           /* rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* subtle shadow */
+    margin: 20px auto;             /* center and spacing from other sections */
+    max-width: 1000px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Adjust card spacing inside */
+.bio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Ensure cards match Portfolio style */
+.bio-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 320px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
