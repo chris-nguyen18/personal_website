@@ -234,21 +234,31 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* Back Button */
-.back-button {
-    display: inline-block;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+/* Section Navigation */
+.section-navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
 }
 
-.back-button:hover {
-    background: var(--bg-light);
-    transform: translateX(-4px);
+.section-nav-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+}
+
+.section-nav-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Animations */
