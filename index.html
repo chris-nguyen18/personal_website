@@ -3,54 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Nguyen Canh | AI & ML Engineer</title>
+    <title>Christopher Nguyen Canh | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="canvas-container">
-        <canvas id="neural-canvas"></canvas>
-    </div>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1 class="home-title">Christopher Nguyen Canh</h1>
+            <p class="home-subtitle">AI & ML Engineer</p>
+            <div class="button-group">
+                <a href="#biography" class="nav-button">Biography</a>
+                <a href="#portfolio" class="nav-button">Portfolio</a>
+                <a href="#contact" class="nav-button">Contact</a>
+            </div>
+        </div>
+    </section>
 
-    <main class="content-wrapper">
-        <header class="ai-hero">
-            <div class="status-indicator"><span></span> Available for ML Engineering Roles</div>
-            <h1 class="glitch" data-text="Christopher Nguyen Canh">Christopher Nguyen Canh</h1>
-            <p class="tagline">UC Davis CS & Stats (ML) | AWS Certified</p>
-        </header>
-
-        <section class="grid-layout">
-            <div class="ai-card bio">
-                <h3>System.profile</h3>
-                <p>Developing at the intersection of <strong>Statistical Learning</strong> and <strong>Scalable Infrastructure</strong>. 3.7 GPA specialized in Algorithm Design & Deep Learning.</p>
+    <!-- Biography Section -->
+    <section id="biography" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Biography</h2>
+            <div class="bio-content">
+                <p>I'm a Computer Science and Statistics student at UC Davis, specializing in Machine Learning. With a 3.7 GPA, I focus on the intersection of Statistical Learning and Scalable Infrastructure.</p>
+                <p>My expertise includes Algorithm Design, Deep Learning, and building production-ready ML systems. I'm AWS Certified (CCP 2025) and passionate about developing solutions that combine theoretical knowledge with practical implementation.</p>
                 <div class="cert-badge">AWS CCP Certified 2025</div>
             </div>
+            <a href="#home" class="back-button">← Back to Home</a>
+        </div>
+    </section>
 
-            <div class="ai-card projects">
-                <h3>Inference.logs</h3>
-                <div class="project-entry">
-                    <span class="date">2025</span>
-                    <strong>LLM Bug Detection</strong>
-                    <p>Java + Redis + DeepCoder. Summarizing repo issues at scale.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="project-date">2025</span>
+                    <h3>LLM Bug Detection</h3>
+                    <p>Java + Redis + DeepCoder. Summarizing repository issues at scale using large language models for automated bug detection and classification.</p>
                 </div>
-                <div class="project-entry">
-                    <span class="date">2024</span>
-                    <strong>Language Classifier</strong>
-                    <p>SVM-based detection using WiLI-2018 dataset.</p>
+                <div class="project-card">
+                    <span class="project-date">2024</span>
+                    <h3>Language Classifier</h3>
+                    <p>SVM-based language detection system using the WiLI-2018 dataset. Achieved high accuracy in identifying languages from text samples.</p>
                 </div>
             </div>
+            <a href="#home" class="back-button">← Back to Home</a>
+        </div>
+    </section>
 
-            <div class="ai-card contact">
-                <h3>Socket.connect</h3>
-                <div class="social-links">
-                    <a href="mailto:chris.nguyensj04@gmail.com" class="ai-btn">Email Link</a>
-                    <a href="https://linkedin.com" class="ai-btn secondary">LinkedIn</a>
-                    <a href="https://github.com" class="ai-btn secondary">GitHub</a>
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p>Let's connect! Feel free to reach out through any of the following channels:</p>
+                <div class="contact-links">
+                    <a href="mailto:chris.nguyensj04@gmail.com" class="contact-link">Email</a>
+                    <a href="https://linkedin.com" class="contact-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com" class="contact-link" target="_blank">GitHub</a>
                 </div>
             </div>
-        </section>
-    </main>
+            <a href="#home" class="back-button">← Back to Home</a>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
 </html>
+
