@@ -1,53 +1,69 @@
+:root {
+    --bg-dark: #05070a;
+    --ai-cyan: #00f2ff;
+    --ai-purple: #7000ff;
+    --text-code: #d1d5db;
+    --card-border: rgba(0, 242, 255, 0.15);
+}
+
 body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-  line-height: 1.6;
+    background-color: var(--bg-dark);
+    color: var(--text-code);
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 50px;
+#canvas-container {
+    position: fixed;
+    top: 0; left: 0; z-index: -1;
+    width: 100vw; height: 100vh;
+    opacity: 0.4;
 }
 
-.subtitle {
-  font-weight: bold;
+.ai-hero {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.tagline {
-  color: #555;
+h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, var(--ai-cyan), var(--ai-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
-.links a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
+.ai-card {
+    background: rgba(10, 15, 25, 0.8);
+    border: 1px solid var(--card-border);
+    padding: 25px;
+    border-radius: 4px; /* Industrial sharp edges */
+    position: relative;
 }
 
-section {
-  margin-bottom: 40px;
+.ai-card h3 {
+    color: var(--ai-cyan);
+    font-size: 0.9rem;
+    margin-top: -35px;
+    background: var(--bg-dark);
+    display: inline-block;
+    padding: 0 10px;
 }
 
-.project {
-  margin-bottom: 20px;
+.ai-btn {
+    display: block;
+    border: 1px solid var(--ai-cyan);
+    color: var(--ai-cyan);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.3s;
 }
 
-.tech {
-  color: #555;
-  font-size: 0.9em;
-}
-
-.skills li {
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-.dark {
-  background-color: #121212;
-  color: #eaeaea;
-}
-
-.dark a {
-  color: #90caf9;
+.ai-btn:hover {
+    background: var(--ai-cyan);
+    color: black;
+    box-shadow: 0 0 15px var(--ai-cyan);
 }
