@@ -37,3 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
+
+function toggleProject(button) {
+    const details = button.nextElementSibling;
+    const isOpen = details.classList.contains("open");
+
+    if (isOpen) {
+        details.classList.remove("open");
+        button.textContent = "View Details ▾";
+    } else {
+        details.classList.add("open");
+        button.textContent = "Hide Details ▴";
+    }
+}
