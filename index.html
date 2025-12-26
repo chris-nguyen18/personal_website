@@ -43,82 +43,115 @@
         </div>
     </section>
 
-<!-- Biography Section -->
-<section id="biography" class="content-section">
-  <div class="container section-box">
-    <h2 class="section-title">Biography</h2>
+   <!-- Biography Section -->
+   <section id="biography" class="content-section">
+   <div class="container section-box">
+      <h2 class="section-title">Biography</h2>
 
-    <!-- Intro Section (full width) -->
-    <div class="bio-intro">
-      <p>Hi! I'm <strong>Christopher Nguyen Canh</strong>, a Computer Science and Statistics student at UC Davis, specializing in Machine Learning. I focus on the intersection of statistical learning and scalable infrastructure, building practical solutions from theoretical foundations.</p>
-      <p>I'm passionate about designing algorithms, implementing deep learning systems, and creating production-ready machine learning applications.</p>
-      <a href="Chris_nguyen_resume.pdf" class="btn-resume" target="_blank" rel="noopener noreferrer">📄 View Resume (PDF)</a>
-    </div>
-
-    <!-- Cards Section -->
-    <div class="bio-cards">
-      <!-- Education Card -->
-      <div class="bio-card">
-        <h3>🎓 Education</h3>
-        <ul>
-          <li><strong>UC Davis</strong> — B.S. CS & Statistics (ML Track), 2024–2026 | GPA: 3.70
-            <ul><li>Dean’s List</li></ul>
-          </li>
-          <li><strong>De Anza College</strong> — Associates CS & Math for Transfer, 2021–2024 | GPA: 3.88
-            <ul><li>Top Community College for Transfer</li></ul>
-          </li>
-        </ul>
+      <!-- Intro Section (full width) -->
+      <div class="bio-intro">
+         <p>Hi! I'm <strong>Christopher Nguyen Canh</strong>, a Computer Science and Statistics student at UC Davis, specializing in Machine Learning. I focus on the intersection of statistical learning and scalable infrastructure, building practical solutions from theoretical foundations.</p>
+         <p>I'm passionate about designing algorithms, implementing deep learning systems, and creating production-ready machine learning applications.</p>
+         <a href="Chris_nguyen_resume.pdf" class="btn-resume" target="_blank" rel="noopener noreferrer">📄 View Resume (PDF)</a>
       </div>
 
-      <!-- Skills Card -->
-      <div class="bio-card">
-        <h3>💻 Skills & Technologies</h3>
-        <ul>
-          <li><strong>Programming:</strong> Python, C/C++, Java, Go, R, Bash</li>
-          <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Spring Boot</li>
-          <li><strong>Tools:</strong> Git, Docker, Linux, AWS, MaxQDA</li>
-          <li><strong>Languages:</strong> English (Fluent), Vietnamese (Conversational)</li>
-        </ul>
+      <!-- Cards Section -->
+      <div class="bio-cards">
+         <!-- Education Card -->
+         <div class="bio-card">
+         <h3>🎓 Education</h3>
+         <ul>
+            <li><strong>UC Davis</strong> — B.S. CS & Statistics (ML Track), 2024–2026 | GPA: 3.70
+               <ul><li>Dean’s List</li></ul>
+            </li>
+            <li><strong>De Anza College</strong> — Associates CS & Math for Transfer, 2021–2024 | GPA: 3.88
+               <ul><li>Top Community College for Transfer</li></ul>
+            </li>
+         </ul>
+         </div>
+
+         <!-- Skills Card -->
+         <div class="bio-card">
+         <h3>💻 Skills & Technologies</h3>
+         <ul>
+            <li><strong>Programming:</strong> Python, C/C++, Java, Go, R, Bash</li>
+            <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Spring Boot</li>
+            <li><strong>Tools:</strong> Git, Docker, Linux, AWS, MaxQDA</li>
+            <li><strong>Languages:</strong> English (Fluent), Vietnamese (Conversational)</li>
+         </ul>
+         </div>
+
+         <!-- Certifications Card -->
+         <div class="bio-card">
+         <h3>🏅 Certifications</h3>
+         <div class="cert-badge">AWS CCP Certified 2025</div>
+         </div>
       </div>
 
-      <!-- Certifications Card -->
-      <div class="bio-card">
-        <h3>🏅 Certifications</h3>
-        <div class="cert-badge">AWS CCP Certified 2025</div>
+      <!-- Navigation -->
+      <div class="section-navigation">
+         <a href="#home" class="section-nav-button">Home</a>
+         <a href="#portfolio" class="section-nav-button">Portfolio</a>
+         <a href="#contact" class="section-nav-button">Contact</a>
       </div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="section-navigation">
-      <a href="#home" class="section-nav-button">Home</a>
-      <a href="#portfolio" class="section-nav-button">Portfolio</a>
-      <a href="#contact" class="section-nav-button">Contact</a>
-    </div>
-  </div>
-</section>
+   </div>
+   </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="content-section">
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <span class="project-date">2025</span>
-                    <h3>LLM Bug Detection</h3>
-                    <p>Java + Redis + DeepCoder. Summarizing repository issues at scale using large language models for automated bug detection and classification.</p>
-                </div>
-                <div class="project-card">
-                    <span class="project-date">2024</span>
-                    <h3>Language Classifier</h3>
-                    <p>SVM-based language detection system using the WiLI-2018 dataset. Achieved high accuracy in identifying languages from text samples.</p>
-                </div>
+         <div class="project-card">
+            <span class="project-date">2026</span>
+            <h3>LLM-Based Bug Detection</h3>
+
+            <!-- Short summary (always visible) -->
+            <p class="project-summary">
+               Built a GitHub analytics pipeline to evaluate whether LLMs can detect real bugs
+               by cross-referencing source code with GitHub issues.
+            </p>
+
+            <p class="project-tech">
+               <strong>Tech:</strong> Java, Redis, GitHub API, Reflection, Ollama, JUnit
+            </p>
+
+            <!-- Toggle Button -->
+            <button class="project-toggle" onclick="toggleProject(this)">
+               View Details ▾
+            </button>
+
+            <!-- Hidden long description -->
+            <div class="project-details">
+               <p>
+                     Developed a multi-stage system that collects repository data using the GitHub API,
+                     persists structured objects in Redis, and evaluates bug detection accuracy using
+                     LLM-powered microservices.
+               </p>
+
+               <ul>
+                     <li>Fetched top repositories across C/C++, Java, and Rust</li>
+                     <li>Computed activity metrics (stars, forks, commits, issues)</li>
+                     <li>Designed a Redis persistence framework using Java annotations & reflection</li>
+                     <li>Built custom microservices for issue summarization and bug detection</li>
+                     <li>Used Ollama (deepcoder:1.5b) to compare LLM findings with real GitHub issues</li>
+                     <li>Implemented JUnit tests and CI with GitHub Actions</li>
+               </ul>
+
+               <p>
+                     This project evaluates the practical reliability of LLMs in identifying
+                     bugs that were also reported by real users.
+               </p>
+
+               <a href="https://github.com/chris-nguyen18" target="_blank" class="project-link">
+                     View on GitHub →
+               </a>
             </div>
-            <div class="section-navigation">
-                <a href="#home" class="section-nav-button">Home</a>
-                <a href="#biography" class="section-nav-button">Biography</a>
-                <a href="#contact" class="section-nav-button">Contact</a>
-            </div>
-        </div>
+         </div>
+
+         <div class="section-navigation">
+            <a href="#home" class="section-nav-button">Home</a>
+            <a href="#biography" class="section-nav-button">Biography</a>
+            <a href="#contact" class="section-nav-button">Contact</a>
+         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
