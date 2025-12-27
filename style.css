@@ -340,6 +340,14 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
+.project-details {
+    margin-top: 1rem;
+    display: none;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary); /* DARK TEXT */
+}
+
 .project-date {
     display: inline-block;
     background: var(--bg-section);
