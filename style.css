@@ -327,12 +327,12 @@ body {
 }
 
 .project-card {
-    background: #0f172a;
+    background: var(--bg-light);
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
