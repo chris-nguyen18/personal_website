@@ -327,7 +327,7 @@ body {
 }
 
 .project-card {
-    background: var(--bg-light);
+    background: #0f172a;
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
