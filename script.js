@@ -50,3 +50,9 @@ function toggleProject(button) {
         button.textContent = "Hide Details ▴";
     }
 }
+
+function toggleProject(button) {
+    const details = button.nextElementSibling;
+    details.classList.toggle("open");
+    button.classList.toggle("open");
+}

@@ -634,3 +634,56 @@ body {
 .project-link:hover {
     text-decoration: underline;
 }
+
+/* Modern Card Button */
+.card-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.65rem 1.3rem;
+    margin-top: 1rem;
+
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(37, 99, 235, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 8px 24px rgba(37, 99, 235, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+.card-button:active {
+    transform: translateY(0);
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, 0.3),
+        inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.project-toggle span {
+    transition: transform 0.25s ease;
+}
+
+.project-toggle.open span {
+    transform: rotate(180deg);
+}
