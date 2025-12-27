@@ -190,6 +190,51 @@
             </div>
          </div>
 
+<div class="project-card">
+    <span class="project-date">2024</span>
+    <h3>Typological Language Identification</h3>
+
+    <p class="project-summary">
+        Built an interpretable SVM-based language identification system using typological
+        and character-level features on the WiLI-2018 dataset.
+    </p>
+
+    <p class="project-tech">
+        <strong>Tech:</strong> Python, scikit-learn, SVM, TF-IDF, Streamlit, WiLI-2018
+    </p>
+
+    <button class="project-toggle" onclick="toggleProject(this)">
+        View Details ▾
+    </button>
+
+    <div class="project-details">
+        <p>
+            Designed a reproducible ML pipeline to classify English, French, and Spanish
+            using character n-grams, diacritics, and linguistic cues rather than neural models.
+        </p>
+
+        <ul>
+            <li>Engineered char n-gram (1–5) TF-IDF features with diacritic awareness</li>
+            <li>Trained and tuned a Linear SVM with balanced class coverage</li>
+            <li>Evaluated accuracy, macro F1, confusion matrices, and top-k accuracy</li>
+            <li>Built a Streamlit UI for interactive inference and metrics inspection</li>
+            <li>Implemented unit tests and artifact persistence for reproducibility</li>
+        </ul>
+
+        <p>
+            Emphasis was placed on interpretability, error analysis, and scalable evaluation
+            across multiple target languages.
+        </p>
+
+        <a href="https://github.com/Hyunseo17/Typological-Language-Classification"
+           target="_blank"
+           class="project-link">
+           View on GitHub →
+        </a>
+    </div>
+</div>
+
+
          <div class="section-navigation">
             <a href="#home" class="section-nav-button">Home</a>
             <a href="#biography" class="section-nav-button">Biography</a>
