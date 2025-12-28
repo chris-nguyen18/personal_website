@@ -576,38 +576,67 @@ body {
   font-weight: bold;
 }
 
+/* Project Summary */
 .project-summary {
-    margin-bottom: 0.5rem;
-    color: #d1d5db;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
 }
 
+/* Tech Stack */
 .project-tech {
     font-size: 0.9rem;
-    color: #9ca3af;
+    color: #4b5563;
     margin-bottom: 1rem;
 }
 
+/* Toggle Button (Modern + Visible) */
 .project-toggle {
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: white;
-    padding: 0.4rem 0.75rem;
-    border-radius: 8px;
-    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    padding: 0.55rem 1.25rem;
+    margin-top: 0.75rem;
+
+    background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+    color: #ffffff;
+
     font-size: 0.85rem;
-    transition: background 0.2s ease;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    transition: all 0.25s ease;
 }
 
 .project-toggle:hover {
-    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.45);
 }
 
+/* Rotate arrow */
+.project-toggle span {
+    transition: transform 0.25s ease;
+}
+
+.project-toggle.open span {
+    transform: rotate(180deg);
+}
+
+/* Project Details */
 .project-details {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+
     display: none;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
 }
 
 .project-details.open {
@@ -620,16 +649,23 @@ body {
 }
 
 .project-details li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 
+/* GitHub Link */
 .project-link {
     display: inline-block;
     margin-top: 0.75rem;
-    color: #60a5fa;
+
+    color: var(--primary-color);
+    font-weight: 600;
     text-decoration: none;
-    font-weight: 500;
 }
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
 
 .project-link:hover {
     text-decoration: underline;
