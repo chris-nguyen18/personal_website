@@ -100,7 +100,7 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="content-section">
          <div class="project-card">
-            <span class="project-date">2026</span>
+            <span class="project-date">2025</span>
             <h3>LLM-Based Bug Detection</h3>
 
             <!-- Short summary (always visible) -->
@@ -148,7 +148,7 @@
          </div>
 
          <div class="project-card">
-            <span class="project-date">2024</span>
+            <span class="project-date">2025</span>
             <h3>Typological Language Identification</h3>
 
             <p class="project-summary">
@@ -192,7 +192,49 @@
             </div>
          </div>
 
+      <div class="project-card">
+         <span class="project-date">2025</span>
+         <h3>Crumpl — Intelligent Receipt Scanner</h3>
 
+         <p class="project-summary">
+            Built a full-stack receipt scanning system that extracts structured purchase data
+            from images using OCR and LLM-based parsing.
+         </p>
+
+         <p class="project-tech">
+            <strong>Tech:</strong> Python, FastAPI, SQLite, SQLAlchemy, Dart, OCR, LLMs
+         </p>
+
+         <button class="project-toggle" onclick="toggleProject(this)">
+            View Details <span>▾</span>
+         </button>
+
+         <div class="project-details">
+            <p>
+                  Crumpl automates receipt digitization by converting raw images into structured,
+                  queryable data for expense tracking and analytics.
+            </p>
+
+            <ul>
+                  <li>Built an OCR + LLM pipeline to extract merchant, date, totals, and line items</li>
+                  <li>Designed a REST API using FastAPI for image upload and data processing</li>
+                  <li>Implemented a normalized SQLite schema with SQLAlchemy ORM</li>
+                  <li>Developed a Dart-based mobile frontend for receipt capture</li>
+                  <li>Handled error cases including blurry images and partial receipts</li>
+            </ul>
+
+            <p>
+                  The system emphasizes robustness, schema validation, and end-to-end automation
+                  from capture to persistent storage.
+            </p>
+
+            <a href="https://github.com/YOUR_USERNAME/crumpl"
+               target="_blank"
+               class="project-link">
+               View on GitHub →
+            </a>
+         </div>
+      </div>
 
          <div class="section-navigation">
             <a href="#home" class="section-nav-button">Home</a>
